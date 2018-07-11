@@ -7,7 +7,6 @@
  *  Class for logged message in console
  *  Used Serial arduino class
  *  For enable logged in serial console, must be define DEBUG, in the production code Log recommended disable (not declare DEBUG), for release memory.
- *  For enable logged in linux console, must be define DEBUG_LINUX
  *
  *  Log begin first command:
  *              LOG_BEGIN(baudrate);
@@ -56,15 +55,12 @@
   #if (DEBUG == LV_NONE)
     #undef DEBUG
   #endif
-
-#else
-  #undef DEBUG_LINUX
 #endif
 
 
 #ifdef DEBUG
-        #include "Arduino.h"
-        #include "Printable.h"
+  #include "Arduino.h"
+	#include "Printable.h"
 
 	#ifdef DEBUG_MEMORY
 	  #include "MemoryFree.h"
@@ -117,14 +113,14 @@
 		static void Begin(unsigned long baud);
 		static void End();
 
-		static void LogPrint(int logMessage, 			    const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
+		static void LogPrint(int logMessage, 			            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(unsigned int logMessage, 	            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(char logMessage,                       const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(unsigned char logMessage, 	            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(const char logMessage[],               const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(const Printable& logMessage,           const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(const String& logMessage,              const char* cFileName, const int iLine, const bool lineEnd);
-		static void LogPrint(long logMessage,              	    const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
+		static void LogPrint(long logMessage,              			const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(unsigned long logMessage,              const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(double logMessage,                     const char* cFileName, const int iLine, const bool lineEnd, int format= 2);
 		static void LogPrint(const __FlashStringHelper* logMessage, const char* cFileName, const int iLine, const bool lineEnd);
