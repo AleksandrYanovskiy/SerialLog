@@ -51,7 +51,8 @@ Put library folder in to Arduino library path "Scetchbook location", example:
 
 ## Memory free information
 For show available memory in log output, install [MemoryFree Library](https://playground.arduino.cc/Code/AvailableMemory) and uncomment:  
-- #define DEBUG_MEMORY
+- #define DEBUG_MEMORY  
+in SerialLog.h
 
 ## Example of use:
 ```
