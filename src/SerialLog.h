@@ -113,14 +113,14 @@
 		static void Begin(unsigned long baud);
 		static void End();
 
-		static void LogPrint(int logMessage, 			            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
+		static void LogPrint(int logMessage, 			                  const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(unsigned int logMessage, 	            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(char logMessage,                       const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(unsigned char logMessage, 	            const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(const char logMessage[],               const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(const Printable& logMessage,           const char* cFileName, const int iLine, const bool lineEnd);
 		static void LogPrint(const String& logMessage,              const char* cFileName, const int iLine, const bool lineEnd);
-		static void LogPrint(long logMessage,              			const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
+		static void LogPrint(long logMessage,              			    const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(unsigned long logMessage,              const char* cFileName, const int iLine, const bool lineEnd, int format = DEC);
 		static void LogPrint(double logMessage,                     const char* cFileName, const int iLine, const bool lineEnd, int format= 2);
 		static void LogPrint(const __FlashStringHelper* logMessage, const char* cFileName, const int iLine, const bool lineEnd);
