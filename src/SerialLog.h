@@ -1,7 +1,7 @@
 /*
  * SerialLog.h
  *
- *  Created on: 02 июля 2017 г.
+ *  Created on: 11 июля 2018 г.
  *      Author: janovsky
  *
  *  Class for logged message in console
