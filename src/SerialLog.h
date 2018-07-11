@@ -20,10 +20,10 @@
  *              Normal message output, if set low or normal level;
  *              High message output for all levels;
  *
- *  Level can set command:
- *                      LOG_LOW() - default
- *                      LOG_NORMAL()
- *                      LOG_HIGH()
+ *  Level can set:
+ *                 LV_LOW() - default
+ *                 LV_NORMAL()
+ *                 LV_HIGH()
  *
  *  Message output can send command:
  *                      LOG(messsage[, format]), LOG_L(messsage[, format]) - for send log message with Low level
