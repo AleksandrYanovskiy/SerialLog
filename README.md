@@ -32,12 +32,14 @@ for LV_NORMAL:
 for LV_HIGH:  
 - LOG_H(logMessage) - no new line  
 - LOG_H_LN(logMessage) - with new line  
-
+  
+  
 To save memory, you can store string messages in FLASH, for example:  
 - LOG_N_LN(F("DEBUG MESSAGE")));  
 
-When debugging is no longer needed, to free memory from SerialLog, you must comment out #define DEBUG LV _ ## in SerialLog.h
-or specify LV_NONE:  
+When debugging is no longer needed, to free memory from SerialLog, you must comment out  
+- #define DEBUG LV  
+in SerialLog.h or specify LV_NONE:  
 - #define DEBUG LV_NONE  
 
 In a project using a library, you need to add the following to enable debugging:  
