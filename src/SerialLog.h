@@ -68,13 +68,13 @@
 
   //macros set log level
   #if DEBUG == LV_LOW
-    #define LOG(logMessage, ...)       graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
+    #define LOG(logMessage, ...)      graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
     #define LOG_LN(logMessage, ...)   graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, true, ##__VA_ARGS__)
-    #define LOG_L(logMessage, ...)     graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
+    #define LOG_L(logMessage, ...)    graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
     #define LOG_L_LN(logMessage, ...) graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, true, ##__VA_ARGS__)
-    #define LOG_N(logMessage, ...)     graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
+    #define LOG_N(logMessage, ...)    graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
     #define LOG_N_LN(logMessage, ...) graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, true, ##__VA_ARGS__)
-    #define LOG_H(logMessage, ...)     graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
+    #define LOG_H(logMessage, ...)    graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, false, ##__VA_ARGS__)
     #define LOG_H_LN(logMessage, ...) graf::SerialLog::LogPrint(logMessage, __FILENAME__, __LINE__, true, ##__VA_ARGS__)
   #elif DEBUG == LV_NORMAL
     #define LOG(logMessage, ...)
