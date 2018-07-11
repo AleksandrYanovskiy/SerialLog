@@ -43,6 +43,14 @@ or specify LV_NONE:
 In a project using a library, you need to add the following to enable debugging:  
 - #include "SerialLog.h"  
 
+## Install
+Put library folder in to Arduino library path "Scetchbook location", example:  
+- C:\Users\USER_NAME\Documents\Arduino\libraries\SerialLog
+
+## Memory free information
+For show available memory in log output, install [MemoryFree Library](https://playground.arduino.cc/Code/AvailableMemory) and uncomment:  
+- #define DEBUG_MEMORY
+
 ## Example of use:
 ```
 #include "SerialLog.h"
