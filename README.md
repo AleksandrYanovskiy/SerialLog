@@ -36,7 +36,7 @@ for LV_HIGH:
   
   
 To save memory, you can store string messages in FLASH, for example:  
-`LOG_N_LN(F("DEBUG MESSAGE")));`  
+`LOG_N_LN(F("DEBUG MESSAGE"));`  
 
 When debugging is no longer needed, to free memory from SerialLog, you must comment out  
 `//#define DEBUG LV_XXX`  
