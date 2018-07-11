@@ -112,9 +112,6 @@
 
 	class SerialLog {
 	public:
-		//SerialLog();
-		//virtual ~SerialLog();
-
 		static const char* getVersion();
 
 		static void Begin(unsigned long baud);
