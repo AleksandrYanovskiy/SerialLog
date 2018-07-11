@@ -61,11 +61,18 @@ in SerialLog.h
 
 // the setup function runs once when you press reset or power the board
 void setup () {
+    //init logger
     LOG_BEGIN(57600);
-    LOG("SETUP ...");
+    
+    //print strin message
+    LOG_LN("SETUP ...");
+
+    //print variable value
+    LOG("LED_BUILDIN:");
+    LOG_LN(LED_BUILTIN);
 
     // initialize digital pin LED_BUILTIN as an output.
-    pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);    
 }
 
 // the loop function runs over and over again again forever
