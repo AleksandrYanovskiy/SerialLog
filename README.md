@@ -64,7 +64,7 @@ void setup () {
     //init logger
     LOG_BEGIN(57600);
     
-    //print strin message
+    //print string message
     LOG_LN("SETUP ...");
 
     //print variable value
