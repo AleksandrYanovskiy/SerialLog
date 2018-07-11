@@ -16,15 +16,6 @@ unsigned long SerialLog::baud_ = 9600; //default baud rate
 bool SerialLog::isInit_ = false;
 bool SerialLog::isHeadPrint_ = false;
 
-/*
-SerialLog::SerialLog() {
-	Begin(SerialLog::baud_);
-}
-
-SerialLog::~SerialLog() {
-	End();
-}
-*/
 
 /**
  * version info
