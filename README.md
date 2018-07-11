@@ -5,7 +5,7 @@ The library is designed to output debug information via a standard Serial consol
 
 ## Description
 To output debug information you need to declare in SerialLog.h necessary debug level:  
-- #define DEBUG LV_LOW  
+`#define DEBUG LV_LOW`  
 where LV_LOW is the level of output messages.  
 
 There are 3 levels:
