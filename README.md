@@ -1,6 +1,7 @@
 # SerialLog
 SerialLog - library for debugging arduino.
 The library is designed to output debug information via a standard Serial console.
+> Many thanks to my best friend Sobyanin Victor from Krasnodar for moral support and testing!
 
 ## Description
 To output debug information you need to declare in SerialLog.h necessary debug level:  
