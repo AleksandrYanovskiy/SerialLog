@@ -2,7 +2,7 @@
  * SerialLog.cpp
  *
  *  Created on: 11 июля 2018 г.
- *      Author: janovsky
+ *      Author: Aleksandr Yanovskiy
  */
 
 
