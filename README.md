@@ -1,7 +1,6 @@
 # SerialLog
-serial log for debugging arduino
-The library is designed to output debug information via a standard Serial console or to std_out for debugging on Linux (Eclipse).(For debugging in Linux, you need to connect the modified Arduino.h and other specific libraries.
-To output information in std :: out when debugging in Linux, specify in Common.h   #define DEBUG_LINUX )
+SerialLog - library for debugging arduino.
+The library is designed to output debug information via a standard Serial console.
 
 ## Description
 To output debug information you need to declare in Common.h  
