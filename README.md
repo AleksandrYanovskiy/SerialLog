@@ -68,7 +68,7 @@ void setup () {
     LOG_LN("SETUP ...");
 
     //print variable value
-    LOG("LED_BUILDIN:");
+    LOG("LED_BUILTIN:");
     LOG_LN(LED_BUILTIN);
 
     // initialize digital pin LED_BUILTIN as an output.
