@@ -18,7 +18,7 @@ Thus, you can display messages with low priority on the initial debugging, and t
 To output messages, you must initialize the required transmission rate:  
 - LOG_BEGIN (57600);
 
-The output of messages is made by commands, similar to the output of Serial.print() and Serial.println():
+The output of messages is made by commands, similar to the output of Serial.print() and Serial.println():  
 for LV_LOW:  
 - LOG(logMessage) - no new line  
 - LOG_LN(logMessage) - with new line  
@@ -35,7 +35,7 @@ for LV_HIGH:
 
 To save memory, you can store string messages in FLASH, for example:  
 - LOG_N_LN(F("DEBUG MESSAGE")));  
-         
+
 When debugging is no longer needed, to free memory from SerialLog, you must comment out #define DEBUG LV _ ## in SerialLog.h
 or specify LV_NONE:  
 - #define DEBUG LV_NONE  
@@ -45,7 +45,7 @@ In a project using a library, you need to add the following to enable debugging:
 
 ## Example of use:
 ```
-#include "Common.h"
+#include "SerialLog.h"
 
 // the setup function runs once when you press reset or power the board
 void setup () {
