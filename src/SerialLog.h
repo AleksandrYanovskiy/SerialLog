@@ -35,12 +35,35 @@
 #ifndef SERIALLOG_H_
 #define SERIALLOG_H_
 
+#define _VER "1.00"
 
-#include "Common.h"
+#define LV_NONE 1
+#define LV_LOW 2
+#define LV_NORMAL 3
+#define LV_HIGH 4
 
-#define _VER "0.01"
+#define DEBUG LV_NORMAL
+//library for show free memory  https://playground.arduino.cc/Code/AvailableMemory
+#define DEBUG_MEMORY
 
 #ifdef DEBUG
+  #if ( (DEBUG != LV_NONE) && (DEBUG != LV_LOW) && (DEBUG != LV_NORMAL) && (DEBUG != LV_HIGH) )
+	#error "DEBUG must be in LV_LOW or LV_NORMAL or LV_HIGH or LV_NONE!"
+  #elif (DEBUG != LV_NONE)
+    #warning "Comment #define DEBUG for disable debug messages and free memory!"
+  #endif
+
+  #if (DEBUG == LV_NONE)
+    #undef DEBUG
+  #endif
+
+#else
+  #undef DEBUG_LINUX
+#endif
+
+
+#ifdef DEBUG
+  #include "Arduino.h"
 	#include "Printable.h"
 
 	#ifdef DEBUG_MEMORY
@@ -84,7 +107,6 @@
 	//macros get only file name without path
 	#define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 
-	// https://ru.wikipedia.org/wiki/Вариативный_макрос
 
 	namespace graf {
 
